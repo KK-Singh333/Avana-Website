@@ -7,7 +7,7 @@
 /*##########################Navbar Styling######################################*/
 #navbar{
     display: flex;
-    padding: 0 89px 0 33px;
+    padding: 0 6% 0 3%;
     margin: 1rem;
     width: 100vw;
     flex-wrap: nowrap;
@@ -35,6 +35,7 @@
     font-weight: 400;
     font-style: normal;
     overflow: visible;
+    padding-left: 4%;
 }
 .menu{
     display: flex;
@@ -51,7 +52,7 @@
     overflow: visible;
 }
 .menu li{
-    padding: 1rem;
+    padding: 4%;
     border-radius: 20px;
     transition: 0.3s;
     overflow: visible;
@@ -59,7 +60,7 @@
 .menu a,.menu p{
     text-decoration: none;
     font-family: "Montserrat", serif;
-    font-size: 1rem;
+    font-size: 0.8vw;
     font-weight: 500;
     color: black;
     padding: 0.5rem;
@@ -67,6 +68,7 @@
 }
 .dropdown p{
     display: inline;
+    text-wrap: nowrap;
     padding: 0;
     margin: 0;
 }
@@ -159,17 +161,17 @@
 .club_name h1{
     font-family: "Montserrat", serif;
     font-weight: 800;
-    font-size: 4.375rem;
+    font-size: 4vw;
 }
 .club_name h3{
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 2.18rem;
+    font-size: 2vw;
 }
 /*########################################Info###############################################*/
 .info_section{
     display: flex;
-    padding: 3rem 42.3125rem;
+    padding: 3rem 25%;
     justify-content: center;
     align-content: space-around;
     flex-wrap: wrap;
@@ -180,17 +182,18 @@
 }
 /********************************************************Showcase Styling***************************************************/
 .showcase{
-    padding: 5rem 1rem 5rem 12rem;
+    padding: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-items: center;
+    justify-content: center;
+    justify-items: stretch;
     align-items: center;
     align-content: space-between;
 }
 .showitem{
     display:flex;
-    flex-basis: 30%;
+    flex-basis: 20%;
+
 }
 .showcase .blank{
     flex-basis: 100%;
@@ -199,9 +202,9 @@
 .showitem-button button{
     display: inline-block;
     position: relative;
-    left: 2.5rem;
-    width: 16rem;
-    height: 3rem;
+    left: 21%;
+    width: 64%;
+    height: 7%;
     border-radius: 30px;
     border: 1px solid black;
     font-size: 1.25rem;
@@ -213,7 +216,7 @@
 /*******************************************Merch*****************************************************/
 .merch{
     display: flex;
-    padding: 0 30rem;
+    padding: 0 14%;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -221,12 +224,19 @@
 .merch h1{
     font-family: "Montserrat", serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 .merch p{
     font-family: "Montserrat", serif;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1vw;
+}
+.merch img{
+    object-fit: contain;
+    max-width: 100%;
+}
+.merch_contact{
+    flex-basis: 30%;
 }
 /********************************************Homepage Gallery******************************************************/
 .home-gallery{
@@ -239,7 +249,7 @@
 .home-gallery h1{
     font-family: "Montserrat", serif;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2vw;
 }
 .blank{
     display: flex;
@@ -250,7 +260,7 @@
     justify-content: center;
     align-items: end;
     width: 70vw;
-    height: 1000px;
+    height: 57vw;
     background-image: url("Images/home_gallery_img1.png"),url("Images/home_gallery_img2.png"),url("Images/home_gallery_img3.png"),url("Images/home_gallery_img4.png");
     background-position: left top,right top,left bottom,right bottom;
     background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
@@ -258,16 +268,17 @@
 }
 .home-images button{
     display: inline-block;
-    width: 16rem;
-    height: 3rem;
+    width: 17%;
+    height: 5%;
     margin-bottom: 3rem;
     border-radius: 30px;
     border: 1px solid black;
-    font-size: 1.25rem;
+    font-size: 100%;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    text-overflow: clip;
 }
 /**********************************************Footer**************************************************************************/
 .footer{
