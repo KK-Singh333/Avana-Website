@@ -232,7 +232,9 @@
     #navbar-links li a {
         font-size: 14px;
     }
-
+   .logo span{
+        display: none;
+   }
     #navbar-links li a {
         padding: 2px 0;
     }
