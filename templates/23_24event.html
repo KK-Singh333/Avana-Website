@@ -1,0 +1,128 @@
+
+{% extends "base.html" %}
+
+{% block title %}Events 23-24{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/event.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Header with Logo and 23-24 Text -->
+    <div class="header-container">
+        <div class="avana-logo">
+            <img src="{{ url_for('static', filename='images/club_icon.png') }}" alt="Avana Logo">
+        </div>
+        <div class="header-text">
+            <span>23-24</span>
+        </div>
+        <div class="go-to-container">
+            <a href="{{ url_for('event2') }}" class="goto-link">
+                Go to 24-25
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description-container">
+        <p>
+            AVANA at IIT Indore has always been consistent in conducting various activities with the prime goal of supporting children, women, and the underprivileged in our society. Here are a few of the events that we've conducted so far.
+        </p>
+    </div>
+
+    <!-- Line separator -->
+    <div class="line-separator"></div>
+
+    <!-- Cloth Donation Drive -->
+    <div class="event-section">
+        <h2>Cloth Donation Drive</h2>
+        <p>
+            We spearheaded a campus-wide clothing drive in May. This initiative aimed to collect clothing and stationary items from all corners of the campus, extending the spirit of generosity to the broader community. Volunteers traversed the campus, engaging with hostel residents to solicit their support for the noble cause. In each hostel, designated collection boxes were stationed, serving as beacons of hope for those in need.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/cloth1.png') }}" alt="Cloth Donation 1">
+            <img src="{{ url_for('static', filename='images/cloth2.png') }}" alt="Cloth Donation 2">
+            <img src="{{ url_for('static', filename='images/cloth3.png') }}" alt="Cloth Donation 3">
+            <img src="{{ url_for('static', filename='images/cloth2.png') }}" alt="Cloth Donation 4">
+        </div>
+    </div>
+
+    <!-- Village Visit -->
+    <div class="event-section">
+        <h2>Village Visit</h2>
+        <p>
+            In Baalda gaon, we met 3-4 farmers and one poultry farm owner. The farmers mostly grow potato, wheat, chana, tomato, and chilly according to the season. They used tractors in their fields for plowing and sowing. Water requirements are met by the automatic pump system connected to the wells.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/village1.png') }}" alt="Village Visit 1">
+            <img src="{{ url_for('static', filename='images/village2.png') }}" alt="Village Visit 2">
+            <img src="{{ url_for('static', filename='images/village3.png') }}" alt="Village Visit 3">
+            <img src="{{ url_for('static', filename='images/village4.png') }}" alt="Village Visit 4">
+        </div>
+    </div>
+
+    <!-- Old Age Home Visit -->
+    <div class="event-section">
+        <h2>Old Age Home Visit</h2>
+        <p>
+            On 27 Jan 2024, we visited Jagganath Narayan Vridhashram, a residential facility for elderly individuals. The purpose of the visit was to engage with the residents through various activities aimed at bringing joy, companionship, and support to the elderly members of our community. Through engaging activities such as an antakshari competition, Chopai recitation, grocery distribution, and dance, we were able to brighten the lives of the elderly residents and create lasting bonds within the community.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/oldage1.png') }}" alt="Old Age Home Visit 1">
+            <img src="{{ url_for('static', filename='images/oldage2.png') }}" alt="Old Age Home Visit 2">
+            <img src="{{ url_for('static', filename='images/oldage1.png') }}" alt="Old Age Home Visit 3">
+            <img src="{{ url_for('static', filename='images/oldage2.png') }}" alt="Old Age Home Visit 4">
+        </div>
+    </div>
+
+    <!-- Plantation -->
+    <div class="event-section">
+        <h2>Plantation</h2>
+        <p>
+            At Avana, we believe in not only enjoying the wonders of nature but also in actively contributing to its preservation and growth. With this ethos in mind, we have embarked on a journey of environmental stewardship, marked by our dedicated plantation efforts. Over the past year, members of the Avana community have come together to plant the seeds of change, quite literally.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/plantation1.png') }}" alt="Plantation 1">
+            <img src="{{ url_for('static', filename='images/plantation2.png') }}" alt="Plantation 2">
+            <img src="{{ url_for('static', filename='images/plantation3.png') }}" alt="Plantation 3">
+            <img src="{{ url_for('static', filename='images/plantation2.png') }}" alt="Plantation 4">
+        </div>
+    </div>
+
+    <!-- Diwali Pradarshani -->
+    <div class="event-section">
+        <h2>Diwali Pradarshani</h2>
+        <p>
+            In a celebration of light, creativity, and community spirit, the Avana Club at IIT Indore organized a vibrant Diwali Pradarshan on campus and in neighboring schools. The festivities began with members of the Avana Club visiting nearby schools, where they engaged with students and educators to promote participation in various creative competitions.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/diwali1.png') }}" alt="Diwali Pradarshani 1">
+            <img src="{{ url_for('static', filename='images/diwali2.png') }}" alt="Diwali Pradarshani 2">
+            <img src="{{ url_for('static', filename='images/diwali3.png') }}" alt="Diwali Pradarshani 3">
+            <img src="{{ url_for('static', filename='images/diwali1.png') }}" alt="Diwali Pradarshani 4">
+        </div>
+    </div>
+
+    <!-- Blood Donation Camp -->
+    <div class="event-section">
+        <h2>Blood Donation Camp</h2>
+        <p>
+            IIT Indore celebrated its 15th anniversary of establishment through an act of selfless benevolence - a Blood Donation Drive hosted by the Avana club on 7 February 2024. Inaugurated by our honorable Director, Dr. Suhas Joshi himself, the drive was graced by the presence of distinguished guests and was a collaborative effort between IITI's Health Centre and a local medical college. An unusual choice of location for such an event, the passage leading up to the Nalanda auditorium, was decked in striking posters depicting the importance of and care to be taken before and after blood donation.
+        </p>
+        <div class="event-images">
+            <img src="{{ url_for('static', filename='images/blood1.png') }}" alt="Blood Donation 1">
+            <img src="{{ url_for('static', filename='images/blood2.png') }}" alt="Blood Donation 2">
+            <img src="{{ url_for('static', filename='images/blood1.png') }}" alt="Blood Donation 3">
+            <img src="{{ url_for('static', filename='images/blood2.png') }}" alt="Blood Donation 4">
+        </div>
+    </div>
+    <!-- Go to 24-25 Section -->
+    <div class="go-to">
+        <a href="{{ url_for('event2') }}" class="goto-link">
+            Go to 24-25
+            <span class="arrow">→</span>
+        </a>
+    </div>
+{% endblock %}
