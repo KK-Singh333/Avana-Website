@@ -1,0 +1,223 @@
+
+
+/* Header container styling */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    flex-wrap: wrap; 
+    position: relative;
+    
+}
+
+/* Styling for the Avana Logo */
+.avana-logo img {
+    width: 125px;
+    height: 82px;
+    margin-right: 10px; 
+}
+
+/* Styling for the 23-24 text */
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* Description container styling */
+.description-container {
+    max-width: 1200px;
+    padding: 0 10px;
+    text-align: center;
+    margin:auto;
+}
+
+.description-container p {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Line separator styling */
+.line-separator {
+    width: 163px;
+    height: 0;
+    margin: 20px auto; 
+    border: 1px solid #000000; 
+    opacity: 1; 
+}
+
+/* General Event Section Styling */
+.event-section {
+    margin: 45px auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.event-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+.event-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e;
+    margin: 20px 40px;
+}
+
+.event-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.event-images img {
+    width: calc(50% - 15px);
+    max-width: 350px;
+    height: 280px;
+}
+
+/* Go to 23-24 Button Styling */
+.go-to-container{
+    position: absolute;
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.go-to {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.goto-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    gap: 8px;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.goto-link:hover {
+    background-color: #f0f0f0; 
+    opacity: 1;
+}
+
+.goto-link .arrow {
+    font-size: 20px; 
+    line-height: 1;
+    margin-left: 3px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .go-to-container {
+        position: static;
+        transform: none;
+        margin-top: 10px; 
+    }
+    .avana-logo img {
+        width: 115px; 
+        height: 68px;
+        margin-right: 5px; 
+    }
+
+    .header-text span {
+        font-size: 22px; 
+    }
+
+    .description-container p {
+        font-size: 12px; 
+        padding: 0 20px; 
+        line-height: 1.5; 
+        margin-top: 5px; 
+    }
+
+    .event-section h2 {
+        font-size: 20px;
+    }
+
+    .event-section p {
+        font-size: 14px;
+        margin: 15px 30px;
+    }
+
+    .event-images img {
+        width: calc(50% - 15px);
+    }
+
+    .goto-link {
+        width: 92px; 
+        height: 28px; 
+        font-size: 11px;
+    }
+
+    .goto-link .arrow {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .avana-logo img {
+        width: 90px; 
+        height: 55px;
+    }
+
+    .header-text span {
+        font-size: 18px; 
+    }
+
+    .description-container p {
+        font-size: 10px; 
+        padding: 0 15px; 
+        margin-top: 5px;
+    }
+
+    .event-section h2 {
+        font-size: 18px;
+    }
+
+    .event-section p {
+        font-size: 12px;
+        margin: 10px 20px;
+    }
+
+    .event-images img {
+        width: calc(100% - 15px);
+    }
+}
+
+

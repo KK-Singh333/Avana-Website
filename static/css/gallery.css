@@ -1,0 +1,119 @@
+
+/* Styling the Gallery Header */
+.gallery-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+#collegelogo {
+    width: 55px;
+    height: 60px;
+}
+
+#clubicon {
+    width: 100px;
+    height: 72px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Description container styling */
+.description-container {
+    max-width: 1200px;
+    padding: 0 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.description-container p {
+    font-size: 20px;
+    color: #34495e;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Line separator styling */
+.line-separator {
+    width: 163px;
+    height: 0;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+/* Gallery Section Styling */
+.gallery-section {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px; 
+}
+
+.gallery-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 50px; 
+    padding-left: 0; 
+    margin-bottom: 20px; 
+}
+
+.gallery-photos {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 0; 
+}
+
+.gallery-photos img {
+    width: calc(33% - 15px); 
+    max-width: 300px;
+    height: 220px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    #collegelogo {
+        width: 50px;
+        height: 54px;
+    }
+    
+    #clubicon {
+        width: 86px;
+        height: 62px;
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    .description-container p {
+        font-size: 14px;
+        padding: 0 20px;
+        line-height: 1.5;
+        margin-top: 5px;
+    }
+
+    .gallery-section h2 {
+        font-size: 20px;
+    }
+
+    .gallery-photos img {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-photos img {
+        width: calc(100% - 15px);
+    }
+}

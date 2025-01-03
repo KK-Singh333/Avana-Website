@@ -1,0 +1,306 @@
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 22px;
+}
+
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-weight: bold;
+}
+
+/* Navbar links */
+#navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+#navbar-links li {
+    padding: 10px 15px;
+}
+
+#navbar-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#navbar-links li a:hover {
+    color: #0073e6; 
+}
+
+#navbar-links li a.active {
+    font-weight: 700; 
+    color: #005bb5; 
+}
+
+/* Toggle Button */
+#toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#toggle-button svg {
+    width: 30px;
+    height: 30px;
+    color: #000000;
+}
+
+/* Dropdown Arrow */
+.polygon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #000;
+    margin-left: 2px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; 
+    list-style-type: none;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    padding: 0;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Show Dropdown Menu */
+.dropdown-menu.show {
+    display: block; 
+}
+
+/* Rotate Arrow */
+.polygon.rotate {
+    transform: rotate(180deg); 
+}
+
+
+/* Container for footer elements */
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Flexbox for logo alignment */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+    margin-bottom: 20px;
+}
+
+/* Logo styling */
+#indorelogo {
+    width: 50px;
+    height: 54px;
+}
+
+#avanalogo {
+    width: 80px;
+    height: 66px;
+}
+
+/* Text styling */
+.iit-text {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.avana-text {
+    font-size: 18px;
+    font-weight: bold; 
+    margin-top: 5px;
+}
+
+/* Social media links styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #000; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Instagram icon hover color */
+.social-icon.instagram:hover {
+    color: #e1306c; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #0073b1; 
+}
+
+/* Footer Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar .logo {
+        font-size: 17px;
+    }
+
+    #navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #FFFFFF;
+        padding: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        border-radius: 0 0 8px 8px;
+    }
+
+    #navbar-links.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #navbar-links li {
+        text-align: right;
+        width: 100%;
+    }
+
+    #navbar-links li a {
+        font-size: 16px;
+        padding: 4px 0;
+        text-align: right;
+        padding-right: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    #toggle-button {
+        display: block;
+    }
+
+    .iit-text {
+        font-size: 14px; 
+    }
+
+    .avana-text {
+        font-size: 16px; 
+    }
+
+    .social-links {
+        gap: 10px; 
+    }
+
+    .social-icon {
+        font-size: 25px; 
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .contact-left, .contact-right {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #navbar-links li a {
+        font-size: 14px;
+    }
+
+    #navbar-links li a {
+        padding: 2px 0;
+    }
+
+    .iit-text, .avana-text {
+        font-size: 12px;
+    }
+
+    .social-links {
+        gap: 8px; 
+    }
+
+    .social-icon {
+        font-size: 20px; 
+    }
+}
