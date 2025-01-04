@@ -54,17 +54,19 @@
     font-size: 16px;
     font-weight: 400;
     padding: 8px 12px;
+    margin-right: 5px;
     display: inline-block;
     border-radius: 5px;
+    transition: all 0.3s ;
 }
 
-#navbar-links li a:hover {
-    color: #0073e6; 
+#navbar-links li a:hover { 
+    transform: scale(1.2);
+    background-color:#d9d9d9;
 }
 
 #navbar-links li a.active {
     font-weight: 700; 
-    color: #005bb5; 
 }
 
 /* Toggle Button */
@@ -102,7 +104,7 @@
     margin-top: 5px;
     padding: 0;
     border-radius: 5px;
-    width: 200px;
+    width: 153px;
 }
 
 .dropdown-menu li a {
@@ -120,8 +122,9 @@
 }
 
 /* Rotate Arrow */
-.polygon.rotate {
+.rotate {
     transform: rotate(180deg); 
+    transition: all 0.3s;
 }
 
 
@@ -200,6 +203,62 @@
 }
 
 /* Responsive Styles */
+@media screen and (max-width: 1259px) {
+    .navbar .logo {
+        font-size: 17px;
+    }
+
+    #navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #FFFFFF;
+        padding: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        border-radius: 0 0 8px 8px;
+    }
+
+    #navbar-links.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #navbar-links li {
+        text-align: right;
+        width: 100%;
+    }
+
+    #navbar-links li a {
+        font-size: 16px;
+        padding: 4px 0;
+        text-align: right;
+        padding-right: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    #toggle-button {
+        display: block;
+    }
+
+}
 @media screen and (max-width: 768px) {
     .navbar .logo {
         font-size: 17px;
@@ -287,7 +346,9 @@
     #navbar-links li a {
         font-size: 14px;
     }
-
+    .IIT{
+        display: none;
+    }
     #navbar-links li a {
         padding: 2px 0;
     }

@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="logo">
             <img src="{{ url_for('static', filename='images/indorelogo.png') }}" alt="IIT Indore Logo">
-            <span>Indian Institute of Technology Indore</span>
+            <span class="IIT">Indian Institute of Technology Indore</span>
         </div>
 
         <button id="toggle-button" class="md:hidden focus:outline-none" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
         <ul id="navbar-links">
             <li><a href="/" class="nav-link">Home</a></li>
             <li class="dropdown">
-                <a href="/23_24event" class="nav-link">Our Works</a>
+                <a href="/23_24event" class="nav-link sp-link">Our Works</a>
                 <span class="polygon"></span>
                 <ul class="dropdown-menu">
                     <li><a href="{{url_for('event2')}}" class="dropdown-link">Event 24-25</a></li>
